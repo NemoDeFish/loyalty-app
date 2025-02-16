@@ -1,0 +1,7 @@
+POST http://192.168.68.112:8000/api/sync
+Content-Type: application/json
+
+{
+    "phone_number": "0168400877",
+    "points": 0
+}
