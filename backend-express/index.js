@@ -8,11 +8,9 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const IP = '192.168.68.112'; // Replace with your local IP address
 
 // Middleware
-app.use(cors());
-// app.use(cors({ origin: '*' })); // Allow all origins
+app.use(cors({ origin: "https://loyalty-app-uccv.onrender.com" }));
 app.use(express.json());
 
 // Use routes
@@ -30,6 +28,6 @@ app.get('/', (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, IP, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
