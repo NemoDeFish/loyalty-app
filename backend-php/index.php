@@ -1,8 +1,13 @@
 <?php
 require 'db.php';
+require 'vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 
 // Allow requests from the frontend origin
-header('Access-Control-Allow-Origin: http://192.168.68.112:3000');
+header('Access-Control-Allow-Origin: https://loyalty-app-uccv.onrender.com');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json');

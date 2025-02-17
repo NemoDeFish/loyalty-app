@@ -1,8 +1,9 @@
 <?php
-$host = '127.0.0.1';
-$dbname = 'loyalty_app';
-$username = 'root';
-$password = '10052001';
+require_once __DIR__ . '/config.php'; // Ensures .env is loaded only once
+$host = getenv('LOCAL_DB_HOST');
+$dbname = getenv('LOCAL_DB_NAME');
+$username = getenv('LOCAL_DB_USER');
+$password = getenv('LOCAL_DB_PASS');
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
