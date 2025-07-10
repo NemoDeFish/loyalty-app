@@ -82,6 +82,14 @@ BEGIN
 END //
 ```
 
+## Preview
+
+Here’s a sneak peek of the **Loyalty App** in action:
+
+<p align="center">
+  <img src="screenshots/loyalty-app-homepage.png" alt="Loyalty App Homepage" width="700"/>
+</p>
+
 ## Contributing
 1. Fork the repository.
 2. Create a new branch (`feature-xyz`).
